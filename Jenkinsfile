@@ -18,10 +18,10 @@ node() {
   stage('Unit Tests') {
     gctsExecuteABAPUnitTests(
       script: this,
-      host: 'https://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8002',
+      host: 'http://sap-linux.uw3eayeimf1uvkax5xugm5s5da.rx.internal.cloudapp.net:8002',
       client: '100',
       abapCredentialsId: 'ABAPUserPasswordCredentialsId',
-      repository: 'dineshfujitsu-gctsrepo',
+      repository: 'dineshfujitsu-gcts',
     )
   }     
 }
