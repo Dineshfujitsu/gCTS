@@ -1,0 +1,22 @@
+[
+ {
+  "table":"TEXTPOOLT",
+  "data":
+  [
+   {
+    "ID":"R",
+    "KEY":"",
+    "LANG":"E",
+    "ENTRY":"gCTS Demo Rpt",
+    "LENGTH":13
+   },
+   {
+    "ID":"S",
+    "KEY":"S_VBELN",
+    "LANG":"E",
+    "ENTRY":"D       .",
+    "LENGTH":9
+   }
+  ]
+ }
+]
