@@ -12,10 +12,24 @@
    },
    {
     "ID":"S",
-    "KEY":"S_VBELN",
+    "KEY":"S_AUART",
     "LANG":"E",
     "ENTRY":"D       .",
     "LENGTH":9
+   },
+   {
+    "ID":"S",
+    "KEY":"S_ERDAT",
+    "LANG":"E",
+    "ENTRY":"D       .",
+    "LENGTH":9
+   },
+   {
+    "ID":"S",
+    "KEY":"S_VBELN",
+    "LANG":"E",
+    "ENTRY":"D       .",
+    "LENGTH":22
    }
   ]
  }
