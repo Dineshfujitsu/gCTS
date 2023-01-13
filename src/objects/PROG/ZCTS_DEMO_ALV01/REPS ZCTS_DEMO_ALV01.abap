@@ -21,8 +21,8 @@ DATA:
       gr_table TYPE REF TO CL_sALV_TABLE.
 
 SELECT-OPTIONS  s_vbeln FOR vbak-vbeln.
-SELECT-OPTIONS  s_erdat FOR vbak-erdat.
-SELECT-OPTIONS  s_auart FOR vbak-auart.
+*SELECT-OPTIONS  s_erdat FOR vbak-erdat.
+*SELECT-OPTIONS  s_auart FOR vbak-auart.
 
 TYPES:
   BEGIN OF g_type_s,
