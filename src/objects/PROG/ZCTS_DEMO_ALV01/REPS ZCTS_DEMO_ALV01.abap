@@ -12,17 +12,17 @@ TYPES:
   BEGIN OF ty_vbak,
     vbeln TYPE vbeln_va,
     erdat TYPE erdat,
-*    auart TYPE auart,
-*    netwr TYPE netwr,
-*    waerk TYPE waerk,
+    auart TYPE auart,
+    netwr TYPE netwr,
+    waerk TYPE waerk,
   END OF ty_vbak.
 
 DATA:
       gr_table TYPE REF TO CL_sALV_TABLE.
 
 SELECT-OPTIONS  s_vbeln FOR vbak-vbeln.
-*SELECT-OPTIONS  s_erdat FOR vbak-erdat.
-*SELECT-OPTIONS  s_auart FOR vbak-auart.
+SELECT-OPTIONS  s_erdat FOR vbak-erdat.
+SELECT-OPTIONS  s_auart FOR vbak-auart.
 
 TYPES:
   BEGIN OF g_type_s,
@@ -51,9 +51,9 @@ FORM get_data.
 
   SELECT vbeln
     erdat
-*    auart
-*    netwr
-*    waerk
+    auart
+    netwr
+    waerk
   FROM vbak INTO TABLE it_vbak
     WHERE vbeln IN s_vbeln
 *      AND erdat IN s_erdat
@@ -177,29 +177,29 @@ FORM fill_dummy_data.
   DATA lw_vbrk LIKE LINE OF it_vbak.
   lw_vbrk-vbeln = '0000000001'.
   lw_vbrk-erdat = '20211025'.
-*  lw_vbrk-auart = 'TA'.
-*  lw_vbrk-netwr = '1.00'.
-*  lw_vbrk-waerk = 'EUR'.
+  lw_vbrk-auart = 'TA'.
+  lw_vbrk-netwr = '1.00'.
+  lw_vbrk-waerk = 'EUR'.
   APPEND lw_vbrk TO it_vbak.
 
   lw_vbrk-vbeln = '0000000002'.
   lw_vbrk-erdat = '20211025'.
-*  lw_vbrk-auart = 'BA'.
-*  lw_vbrk-netwr = '10.00'.
-*  lw_vbrk-waerk = 'EUR'.
+  lw_vbrk-auart = 'BA'.
+  lw_vbrk-netwr = '10.00'.
+  lw_vbrk-waerk = 'EUR'.
   APPEND lw_vbrk TO it_vbak.
 
   lw_vbrk-vbeln = '0000000003'.
   lw_vbrk-erdat = '20211025'.
-*  lw_vbrk-auart = 'CA'.
-*  lw_vbrk-netwr = '2.00'.
-*  lw_vbrk-waerk = 'EUR'.
+  lw_vbrk-auart = 'CA'.
+  lw_vbrk-netwr = '2.00'.
+  lw_vbrk-waerk = 'EUR'.
   APPEND lw_vbrk TO it_vbak.
 
   lw_vbrk-vbeln = '0000000004'.
   lw_vbrk-erdat = '20211025'.
-*  lw_vbrk-auart = 'DA'.
-*  lw_vbrk-netwr = '300.00'.
-*  lw_vbrk-waerk = 'EUR'.
+  lw_vbrk-auart = 'DA'.
+  lw_vbrk-netwr = '300.00'.
+  lw_vbrk-waerk = 'EUR'.
   APPEND lw_vbrk TO it_vbak.
 ENDFORM.
